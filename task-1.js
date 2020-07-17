@@ -50,49 +50,59 @@
 //   );
 // }
 
-// Task #5
-let inputCountry = prompt("Введите свою страну !");
-inputCountry = inputCountry.toLowerCase();
-let cost;
-let result;
-let country;
-switch (inputCountry) {
-  case "китай":
-    cost = 100;
-    country = "Китай";
-    result = `Доставка в ${country} будет стоить ${cost} кредитов`;
-    alert(result);
-    break;
+// // Task #5
+// let inputCountry = prompt("Введите свою страну !");
+// inputCountry = inputCountry.toLowerCase();
+// let cost;
+// let result;
+// let country;
+// switch (inputCountry) {
+//   case "китай":
+//     cost = 100;
+//     country = "Китай";
+//     result = `Доставка в ${country} будет стоить ${cost} кредитов`;
+//     alert(result);
+//     break;
 
-  case "чили":
-    cost = 250;
-    country = "Чили";
-    result = `Доставка в ${country} будет стоить ${cost} кредитов`;
-    alert(result);
-    break;
+//   case "чили":
+//     cost = 250;
+//     country = "Чили";
+//     result = `Доставка в ${country} будет стоить ${cost} кредитов`;
+//     alert(result);
+//     break;
 
-  case "австралия":
-    cost = 170;
-    country = "Австралию";
-    result = `Доставка в ${country} будет стоить ${cost} кредитов`;
-    alert(result);
-    break;
-  case "индия":
-    cost = 80;
-    country = "Индию";
-    result = `Доставка в ${country} будет стоить ${cost} кредитов`;
-    alert(result);
-    break;
+//   case "австралия":
+//     cost = 170;
+//     country = "Австралию";
+//     result = `Доставка в ${country} будет стоить ${cost} кредитов`;
+//     alert(result);
+//     break;
+//   case "индия":
+//     cost = 80;
+//     country = "Индию";
+//     result = `Доставка в ${country} будет стоить ${cost} кредитов`;
+//     alert(result);
+//     break;
 
-  case "ямайка":
-    cost = 120;
-    country = "Ямайку";
-    result = `Доставка в ${country} будет стоить ${cost} кредитов`;
-    alert(result);
-    break;
+//   case "ямайка":
+//     cost = 120;
+//     country = "Ямайку";
+//     result = `Доставка в ${country} будет стоить ${cost} кредитов`;
+//     alert(result);
+//     break;
 
-  default:
-    alert("В вашей стране доставка не доступна");
-}
+//   default:
+//     alert("В вашей стране доставка не доступна");
+// }
 
 // Task #6
+let total = 0;
+while (true) {
+  let input = prompt("Введите число");
+  if (input === null) {
+    break;
+  }
+  input = Number(input);
+  total += input;
+}
+console.log(Общая сумма чисел = ${ total });
