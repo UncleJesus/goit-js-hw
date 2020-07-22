@@ -37,19 +37,17 @@
 //   calculateEngravingPrice("Donec orci lectus aliquam est magnis", 20)
 // ); // 120
 
-// // Задание 3
+// Задание 3
 
 // const findLongestWord = function (string) {
-//   const stringArray = string.split(" ");
-//   let longestWord = stringArray[0];
-//   for (let i = 1; i < stringArray.length; i += 1) {
-//     if (stringArray[i].length > longestWord.length) {
-//       longestWord = stringArray[i];
-
+//     const splicedString = string.split(" ");
+//     let LongestWord = splicedString[0];
+//     for (let i = 1; i < splicedString.length; i++) {
+//         if (splicedString[i].length > LongestWord.length) {
+//             LongestWord = splicedString[i];
+//         }
 //     }
-//   }
-
-//   return longestWord;
+//     return LongestWord;
 // };
 
 // /*
@@ -62,7 +60,6 @@
 // console.log(findLongestWord("May the force be with you")); // 'force'
 
 // Задание 4
-
 // const formatString = function (string) {
 //   if (string.length <= 40) {
 //     return string;
@@ -70,6 +67,7 @@
 //   const newString = string.split("").slice(0, 40).join("") + "...";
 //   return newString;
 // };
+
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
 //  */
@@ -87,10 +85,8 @@
 //     "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
 //   )
 // );
-// // вернется форматированная строка
 
 // Задание 5
-
 // const checkForSpam = function (message) {
 //   if (
 //     message.toLowerCase().includes("sale") ||
