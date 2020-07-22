@@ -1,21 +1,20 @@
-// Задание 1
-
+// // Задание 1
 // const logItems = function (array) {
 //   for (let i = 0; i < array.length; i++) {
-//     console.log(i + 1, array[i]);
+//     console.log(`${i + 1} - ${array[i]}`);
 //   }
 // };
+
 // logItems(["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"]);
+
 // logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 
-// \\--------------------------------
-// Задание 2
-// \\--------------------------------
-
+// // Задание 2
 // const calculateEngravingPrice = function (message, pricePerWord) {
-//   const arrayCount = message.split(" ");
-//   return arrayCount.length * pricePerWord;
+//   let splitedMessage = message.split(" ");
+//   return splitedMessage.length * pricePerWord;
 // };
+
 // console.log(
 //   calculateEngravingPrice(
 //     "Proin sociis natoque et magnis parturient montes mus",
@@ -38,17 +37,15 @@
 //   calculateEngravingPrice("Donec orci lectus aliquam est magnis", 20)
 // ); // 120
 
-// \\--------------------------------
-// Задание 3
-// \\--------------------------------
+// // Задание 3
 
 // const findLongestWord = function (string) {
 //   const stringArray = string.split(" ");
 //   let longestWord = stringArray[0];
-
 //   for (let i = 1; i < stringArray.length; i += 1) {
 //     if (stringArray[i].length > longestWord.length) {
 //       longestWord = stringArray[i];
+
 //     }
 //   }
 
@@ -64,9 +61,7 @@
 
 // console.log(findLongestWord("May the force be with you")); // 'force'
 
-// \\--------------------------------
 // Задание 4
-// \\--------------------------------
 
 // const formatString = function (string) {
 //   if (string.length <= 40) {
@@ -94,9 +89,7 @@
 // );
 // // вернется форматированная строка
 
-// \\--------------------------------
 // Задание 5
-// \\--------------------------------
 
 // const checkForSpam = function (message) {
 //   if (
@@ -120,9 +113,7 @@
 
 // console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
 
-// \\--------------------------------
 // Задание 6
-// \\--------------------------------
 
 // let input;
 // const numbers = [];
