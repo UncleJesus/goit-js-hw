@@ -1,10 +1,12 @@
-// const houses = ["Arryn", "Frey", "Greyjoy", "Stark", "Lannister", "Tyrell"];
+// Напишите функцию isEmpty(obj), которая возвращает true,
+// если у объекта нет свойств, иначе false.
 
-// // Вертикальная запись удобнее для чтения
-// const updatedHouses = [
-//   ...houses.slice(0, 1),
-//   "Frey of the Crossing",
-//   ...houses.slice(2),
-// ];
+let schedule = { time: 5 };
 
-// console.log(updatedHouses);
+const isEmpty = function (obj) {};
+
+alert(isEmpty(schedule)); // true
+
+schedule["8:30"] = "get up";
+
+alert(isEmpty(schedule)); // false
