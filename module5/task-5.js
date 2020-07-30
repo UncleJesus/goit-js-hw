@@ -1,20 +1,10 @@
-// // Задание 1
-// *
-// Напиши функцию - конструктор Account, которая создает объект
-// со свойствами login и email. В prototype функции - конструктора
-// добавь метод getInfo(), который выводит в консоль значения полей
-// login и email объекта который его вызвал.
-// *
-
+// Задание 1
 // const Account = function ({ login, email }) {
 //   this.login = login;
 //   this.email = email;
 // };
 // Account.prototype.getInfo = function () {
-//   const accountInfoMessage = console.log(
-//     `Login: ${this.login}, email: ${this.email}`
-//   );
-//   return accountInfoMessage;
+//   console.log(`Login: ${this.login}, email: ${this.email}`);
 // };
 // console.log(Account.prototype.getInfo); // function
 
@@ -32,13 +22,7 @@
 
 // poly.getInfo(); // Login: Poly, Email: poly@mail.com
 
-// *
-// *
-// *-----------------------------------
 // Задание 2
-// *-----------------------------------
-// *
-// *
 
 // class User {
 //   constructor({ name, age, followers }) {
@@ -52,9 +36,6 @@
 //       `User ${this.name} is ${this.age} years old and has ${this.followers} followers`
 //     );
 //     return userInfo;
-//   }
-//   static show() {
-//     console.log(`show!`);
 //   }
 // }
 
@@ -74,14 +55,7 @@
 
 // poly.getInfo(); // User Poly is 3 years old and has 17 followers
 
-// *
-// *
-// *-----------------------------------
 // Задание 3
-// *-----------------------------------
-// *
-// *
-
 // class Storage {
 //   constructor(items) {
 //     this.items = items;
@@ -90,10 +64,14 @@
 //     return this.items;
 //   }
 //   addItem(item) {
-//     this.items = [...this.items, item];
+//     this.items.push(item);
 //   }
-//   removeItem(itemName) {
-//     this.items = this.items.filter((item) => item !== itemName);
+//   removeItem(item) {
+//     for (let i = 0; i < this.items.length; i += 1) {
+//       if (this.items[i] === item) {
+//         this.items.splice([i], 1);
+//       }
+//     }
 //   }
 // }
 // const storage = new Storage([
@@ -112,19 +90,11 @@
 // storage.removeItem("Пролонгер");
 // console.table(storage.items); // [ "Нанитоиды", "Железные жупи", "Антигравитатор", "Дроид" ]
 
-// *
-// *
-// *-----------------------------------
 // Задание 4
-// *-----------------------------------
-// *
-// *
-
 // class StringBuilder {
-//   constructor(string) {
-//     this._value = string;
+//   constructor(value) {
+//     this._value = value;
 //   }
-
 //   get value() {
 //     return this._value;
 //   }
@@ -132,11 +102,9 @@
 //   append(str) {
 //     this._value = this._value + str;
 //   }
-
 //   prepend(str) {
 //     this._value = str + this._value;
 //   }
-
 //   pad(str) {
 //     this._value = str + this._value + str;
 //   }
@@ -153,14 +121,9 @@
 // builder.pad("=");
 // console.log(builder.value); // '=^.^='
 
-// *
-// *
-// *-----------------------------------
 // Задание 5
-// *-----------------------------------
-// *
-// *
-// class Car {
+
+//  class Car {
 //   static getSpecs({ maxSpeed, speed, isOn, distance, price }) {
 //     const getSpecsMessage = console.log(
 //       `Max speed: ${maxSpeed}, Speed: ${speed}, Is on: ${isOn}, Distance: ${distance}, Price: ${price}`
