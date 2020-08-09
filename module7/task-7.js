@@ -1,10 +1,6 @@
 // Задание 1
 
-// const categories = document.querySelectorAll("#categories .item").length;
-
-// console.log(`В списке ${categories} категории.`);
-
-// const listsCategoriesRef = document.querySelectorAll("#categories .item");
+// const listsCategoriesRef.lengt = document.querySelectorAll("#categories .item");
 
 // listsCategoriesRef.forEach((item) =>
 //   console.log(
@@ -99,32 +95,27 @@
 //   }
 // }
 //
-
 //
 // Задание 6
-//
-
-// const input = document.querySelector("#validation-input");
-
-// input.addEventListener("input", (e) => {
-//   if (e.target.value.length < e.target.getAttribute("data-length")) {
-//     input.setAttribute("class", "invalid");
+// const inputValidRef = document.querySelector("#validation-input");
+// inputValidRef.addEventListener("blur", (event) => {
+//   // console.dir(event.target.attributes[2].value);
+//   // console.dir(event.target.dataset.length);
+//   // console.dir(inputValidRef.getAttribute("data-length"));
+//   if (event.target.value.length == inputValidRef.getAttribute("data-length")) {
+//     inputValidRef.classList.add("valid");
+//     inputValidRef.classList.remove("invalid");
 //   } else {
-//     input.setAttribute("class", "valid");
+//     inputValidRef.classList.add("invalid");
+//     inputValidRef.classList.remove("valid");
 //   }
 // });
 
 //
 // Задание 7
 //
-
-// const formSize = document.querySelector("#font-size-control");
-// const formSpan = document.querySelector("#text");
-
-// formSize.addEventListener("input", changeFont);
-
-// function changeFont() {
-//   formSpan.style.fontSize = `${formSize.value}px`;
-// }
-
-//
+// const inputSizeRef = document.querySelector("#font-size-control");
+// const spanSizeRef = document.querySelector("#text-size");
+// inputSizeRef.addEventListener("mouseup", (event) => {
+//     spanSizeRef.style.fontSize = event.target.value + "px";
+// });
