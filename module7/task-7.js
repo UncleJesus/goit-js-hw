@@ -1,16 +1,12 @@
 // Задание 1
-
-// const listsCategoriesRef.lengt = document.querySelectorAll("#categories .item");
-
-// listsCategoriesRef.forEach((item) =>
-//   console.log(
-//     `Категория: ${item.querySelector("h2").textContent},
-//   Количество элементов: ${item.querySelectorAll("li").length}`
-//   )
-// );
+// const listOfCategories = document.querySelectorAll("#categories .item");
+// // console.log(`В списке ${listOfCategories.length} категории`);
+// listOfCategories.forEach((item) => {
+//   console.log(`Категория: ${item.querySelector("h2").textContent},
+//   Количество элементов: ${item.querySelectorAll("li").length}`);
+// });
 
 // Задание 2
-
 // const ingredients = [
 //   "Картошка",
 //   "Грибы",
@@ -46,19 +42,17 @@
 //   },
 // ];
 
-// const itemsOfGallery = (image) => {
-//   const li = document.createElement("li");
-//   li.classList.add("galery-item");
-
+// const createImagesGallery = (image) => {
+//   const item = document.createElement("li");
+//   item.classList.add("gallery__item");
 //   const img = document.createElement("img");
 //   img.src = image.url;
 //   img.alt = image.alt;
-
-//   li.appendChild(img);
-//   return li;
+//   item.appendChild(img);
+//   return item;
 // };
-// const createdGallery = images.map((image) => itemsOfGallery(image));
-// document.querySelector("#gallery").append(...createdGallery);
+// const createGallery = images.map((image) => createItemGallery(image));
+// document.querySelector("#gallery").append(...createGallery);
 
 // // Задание 4
 
@@ -78,37 +72,27 @@
 // }
 
 // Задание 5
-// const inputIn = document.querySelector("#name-input");
-// const inputOut = document.querySelector("#name-output");
+// const inputNameRef = document.querySelector("#name-input");
+// const spanNameRef = document.querySelector("#name-output");
 
-// inputIn.addEventListener("input", inputChangeOut);
-
-// const inputIn = document.querySelector("#name-input");
-// const inputOut = document.querySelector("#name-output");
-
-// inputIn.addEventListener("input", inputChangeOut);
-
-// function inputChangeOut(event) {
-//   inputOut.textContent = event.target.value;
-//   if (inputOut.textContent === "") {
-//     inputOut.textContent = "незнакомец";
-//   }
-// }
+// inputNameRef.addEventListener("blur", (event) => {
+//     spanNameRef.textContent = event.target.value;
+// });
 //
 //
 // Задание 6
 // const inputValidRef = document.querySelector("#validation-input");
 // inputValidRef.addEventListener("blur", (event) => {
-//   // console.dir(event.target.attributes[2].value);
-//   // console.dir(event.target.dataset.length);
-//   // console.dir(inputValidRef.getAttribute("data-length"));
-//   if (event.target.value.length == inputValidRef.getAttribute("data-length")) {
-//     inputValidRef.classList.add("valid");
-//     inputValidRef.classList.remove("invalid");
-//   } else {
-//     inputValidRef.classList.add("invalid");
-//     inputValidRef.classList.remove("valid");
-//   }
+//     // console.dir(event.target.attributes[2].value);
+//     // console.dir(event.target.dataset.length);
+//     // console.dir(inputValidRef.getAttribute("data-length"));
+//     if (event.target.value.length == inputValidRef.getAttribute("data-length")) {
+//         inputValidRef.classList.add("valid");
+//         inputValidRef.classList.remove("invalid");
+//     } else {
+//         inputValidRef.classList.add("invalid");
+//         inputValidRef.classList.remove("valid");
+//     }
 // });
 
 //
